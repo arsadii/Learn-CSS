@@ -5,34 +5,46 @@ html {
   box-sizing: border-box;
 }
 
-.container {
-  background-color: rgb(175, 240, 205);
+body {
+  background-color: #f4f4f4;
+}
+
+nav {
   display: flex;
-  justify-content: start;
-  align-items: start;
-  gap: 1rem;
-  height: 500px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.047);
+  padding: 1rem;
 }
 
-.container .items {
-  order: 10;
-  border: 1px solid black;
-  font-size: 2rem;
-  font-weight: bold;
-  width: 100px;
-  background-color: rgb(109, 185, 230);
+nav .logo img {
+  max-width: 50px;
 }
 
-.items.order1 {
-  order: 1;
+nav ul {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
 }
-.items.order2 {
-  order: 2;
+
+nav ul li {
+  list-style: none;
+  position: relative;
 }
-.items.order3 {
-  order: 3;
-  align-self: center;
+
+nav ul li a {
+  font-family: "Segoe UI", sans-serif;
+  text-decoration: none;
+  color: #191919;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid #c4784c00;
 }
-.items.order4 {
-  order: 4;
+
+nav ul li a:hover {
+  color: #ea6112;
+  border-bottom: 1px solid #ea6112;
 }
