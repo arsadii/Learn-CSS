@@ -6,45 +6,39 @@ html {
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: #9a9a9a;
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: white;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.047);
-  padding: 1rem;
-}
-
-nav .logo img {
-  max-width: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
 
 nav ul {
   display: flex;
+  align-items: center;
   gap: 2rem;
-  padding: 1rem;
+  list-style: none;
 }
 
-nav ul li {
-  list-style: none;
-  position: relative;
+nav div img {
+  width: 50px;
 }
 
 nav ul li a {
-  font-family: "Segoe UI", sans-serif;
   text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
   color: #191919;
   font-weight: 600;
   padding: 8px 0;
   transition: all;
   transition-duration: 300ms;
-  border-bottom: 1px solid #c4784c00;
+  border-bottom: 1px solid rgba(255, 68, 0, 0);
 }
 
 nav ul li a:hover {
-  color: #ea6112;
-  border-bottom: 1px solid #ea6112;
+  color: orangered;
+  border-bottom: 1px solid orangered;
 }
